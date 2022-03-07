@@ -79,6 +79,230 @@ body {
   box-sizing: content-box;
 }
 
+.header__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 220px;
+}
+.header__logo {
+  width: 112px;
+  height: 66px;
+}
+.header__menu {
+  margin: 100px 0 0 0;
+}
+.menu__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu__item:not(:last-child) {
+  margin-right: 40px;
+}
+.menu__icon {
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+}
+.menu__spantext {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+@media (max-width: 1279px) {
+  .header__logo {
+    width: 65px;
+    height: 38px;
+  }
+  .menu__icon {
+    width: 13px;
+    height: 12px;
+  }
+  .menu__spantext {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+@media (max-width: 992px) {
+  .header__logo {
+    width: 52px;
+    height: 31px;
+  }
+  .menu__icon {
+    width: 10px;
+    height: 10px;
+  }
+  .menu__spantext {
+    font-size: 10px;
+    line-height: 12px;
+  }
+}
+
+/* ------------------------------------------------- */
+
+.first-block__container {
+  display: flex;
+  flex-direction: column;
+}
+.first-block__content {
+  display: flex;
+  justify-content: space-between;
+}
+.first-block__title {
+  font-family: "Roboto Slab";
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 81px;
+  width: 80%;
+  margin-bottom: 20px;
+}
+.first-block__text {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  width: 54%;
+}
+.first-block__photo {
+  width: 304px;
+  height: 356px;
+  position: relative;
+}
+.first-block__ellipse {
+  width: 274px;
+  height: 41px;
+  background: #efefef;
+  border-radius: 70%;
+  position: absolute;
+  left: 30px;
+  top: 335px;
+  z-index: -1;
+}
+.first-block__sometext {
+  width: 484px;
+  height: 200px;
+  background: #1e4681;
+  color: white;
+  padding: 20px 27px;
+  position: relative;
+  margin: 0 auto;
+  border-radius: 5px;
+  margin-top: 100px;
+}
+.author-text {
+  font-family: "Roboto Slab";
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 32px;
+}
+.author-name {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  position: absolute;
+  top: 160px;
+  right: 20px;
+}
+
+@media (max-width: 1279px) {
+  .first-block__content {
+    margin-top: -50px;
+  }
+  .first-block__title {
+    font-size: 46px;
+    line-height: 47px;
+  }
+  .first-block__text {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .first-block__photo {
+    width: 176px;
+    height: 206px;
+  }
+  .first-block__ellipse {
+    width: 159px;
+    height: 24px;
+    background: #efefef;
+    border-radius: 70%;
+    position: absolute;
+    left: 20px;
+    top: 195px;
+  }
+  .first-block__sometext {
+    width: 280px;
+    height: 116px;
+    border-radius: 3px;
+  }
+  .author-text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .author-name {
+    font-size: 12px;
+    line-height: 16px;
+    top: 90px;
+    right: 20px;
+  }
+}
+@media (max-width: 992px) {
+  .first-block__content {
+    margin-top: -50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .first-block__item {
+    width: 100%;
+  }
+  .first-block__title {
+    font-size: 37px;
+    line-height: 38px;
+  }
+  .first-block__text {
+    font-size: 10px;
+    line-height: 15px;
+  }
+  .first-block__photo {
+    width: 142px;
+    height: 166px;
+  }
+  .first-block__ellipse {
+    width: 128px;
+    height: 19px;
+    background: #efefef;
+    border-radius: 70%;
+    position: absolute;
+    left: 15px;
+    top: 157px;
+  }
+  .first-block__sometext {
+    width: 225px;
+    height: 96px;
+    border-radius: 2px;
+    margin-top: 0px;
+  }
+  .author-text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .author-name {
+    font-size: 11px;
+    line-height: 14px;
+    top: 80px;
+    right: 10px;
+  }
+  .first-block__sometext {
+    padding: 9px 12px;
+    margin-left: 0;
+  }
+}
+
 /* ------------------------------------------------ */
 .second-block__container {
   margin-top: 50px;
