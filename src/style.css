@@ -605,6 +605,9 @@ select {
 
 .section__format {
   margin-bottom: 249px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
 }
 
 .format__head {
@@ -655,10 +658,17 @@ select {
 
 .section__list {
   margin-bottom: 248px;
+  /* margin-left: 50px; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .section__programm {
   margin-bottom: 53px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .programm__head {
