@@ -1012,6 +1012,7 @@ body {
   height: 780px;
 }
 .footer__second-title {
+  font-size: 55px;
   padding-bottom: 60px;
 }
 .footer__price-text {
@@ -1051,6 +1052,7 @@ body {
   }
   .footer__second-title {
     padding-top: 80px;
+    font-size: 32px;
   }
   .footer__price-text {
     font-size: 14px;
@@ -1083,6 +1085,8 @@ body {
   }
   .footer__second-title {
     padding-top: 62px;
+    font-size: 26px;
+    padding-bottom: 22px;
   }
   .footer__price-text {
     font-size: 12px;
