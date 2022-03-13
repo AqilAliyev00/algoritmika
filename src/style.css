@@ -75,7 +75,7 @@ body {
 .container {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 20px 30px 0 30px;
+  padding: 0 30px;
   box-sizing: content-box;
 }
 .header__container {
@@ -85,6 +85,7 @@ body {
   min-height: 220px;
 }
 .header__logo {
+  margin-top: 20px;
   width: 112px;
   height: 66px;
 }
@@ -126,6 +127,12 @@ body {
   }
 }
 @media (max-width: 992px) {
+  .header__menu {
+    margin: 70px 0 0 0;
+  }
+  .menu__item:not(:last-child) {
+    margin-right: 30px;
+  }
   .header__logo {
     width: 52px;
     height: 31px;
@@ -209,7 +216,7 @@ body {
 
 @media (max-width: 1279px) {
   .first-block__content {
-    margin-top: -50px;
+    margin-top: -20px;
   }
   .first-block__title {
     font-size: 46px;
@@ -250,7 +257,7 @@ body {
 }
 @media (max-width: 992px) {
   .first-block__content {
-    margin-top: -50px;
+    margin-top: -30px;
     margin-bottom: 50px;
     display: flex;
     flex-direction: column;
@@ -310,6 +317,8 @@ body {
   font-weight: 700;
   font-size: 55px;
   line-height: 100px;
+  margin-bottom: 10px;
+  margin-top: 50px;
 }
 .second-block__content {
   display: flex;
@@ -528,14 +537,9 @@ body {
   min-width: 100%;
   overflow: hidden;
 }
-.container {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 20px 30px 0 30px;
-  box-sizing: content-box;
-}
 .section__format {
   margin-bottom: 249px;
+  margin-top: 50px;
 }
 .format__head {
   font-family: "Roboto Slab";
@@ -644,7 +648,7 @@ body {
   .container {
     max-width: 834px;
     margin: 0 auto;
-    padding: 20px 30px 0 30px;
+    padding: 0 30px;
     box-sizing: content-box;
   }
   .format__head {
@@ -857,45 +861,49 @@ body {
   }
 }
 
-.footer__first-block {
+.page__gray-block {
   width: 100%;
   height: 780px;
   background-color: #efefef;
+  overflow: hidden;
 }
-
-.footer__title {
-  padding: 91px 0;
+.gray-block__container {
+  max-height: 780px;
+  margin-top: 91px;
+}
+.gray-block__title {
+  margin-bottom: 34px;
   font-family: "Roboto Slab";
   font-weight: 700;
   font-size: 55px;
   line-height: 56px;
 }
-.footer__div {
+.gray-block__div {
   width: 791px;
   height: 451px;
   background-color: white;
   border-radius: 30px;
   box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.25);
 }
-.footer__text {
+.gray-block__text {
   font-family: "Roboto";
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
   padding: 45px 45px 0 45px;
 }
-.footer__autor-link {
+.gray-block__autor-link {
   display: flex;
   align-items: center;
 }
-.footer__photo {
+.gray-block__photo {
   padding: 26px;
 }
-.footer__image {
+.gray-block__image {
   width: 190px;
   height: 169px;
 }
-.footer__name {
+.gray-block__name {
   font-family: "Roboto Slab";
   font-weight: 700;
   font-size: 30px;
@@ -904,173 +912,184 @@ body {
 }
 
 @media (max-width: 1279px) {
-  .footer__first-block {
+  .page__gray-block {
     height: 452px;
   }
-  .footer__title {
-    padding: 52px 0;
+  .gray-block__container {
+    max-height: 452px;
+    margin-top: 53px;
+  }
+  .gray-block__title {
+    margin-bottom: 20px;
     font-size: 32px;
     line-height: 32px;
   }
-  .footer__div {
+  .gray-block__div {
     width: 458px;
     height: 261px;
     background-color: white;
     border-radius: 17px;
   }
-  .footer__text {
+  .gray-block__text {
     font-size: 12px;
     line-height: 18px;
     padding: 25px 25px 0 25px;
   }
-  .footer__autor-link {
+  .gray-block__autor-link {
     display: flex;
     align-items: center;
   }
-  .footer__photo {
+  .gray-block__photo {
     padding: 15px;
   }
-  .footer__image {
+  .gray-block__image {
     width: 110px;
     height: 98px;
   }
-  .footer__name {
+  .gray-block__name {
     font-size: 17px;
     line-height: 17px;
     padding-bottom: 10px;
   }
-  .footer__icon-facebook {
+  .gray-block__icon-facebook {
     width: 18px;
     height: 18px;
   }
 }
 
 @media (max-width: 992px) {
-  .footer__first-block {
+  .page__gray-block {
     height: 423px;
   }
-  .footer__title {
-    padding: 42px 0;
+  .gray-block__container {
+    max-height: 423px;
+    margin-top: 42px;
+  }
+  .gray-block__title {
+    margin-bottom: 11px;
     font-size: 26px;
     line-height: 26px;
   }
-  .footer__div {
+  .gray-block__div {
     width: 308px;
     height: 248px;
     background-color: white;
     border-radius: 14px;
   }
-  .footer__text {
+  .gray-block__text {
     font-size: 10px;
     line-height: 15px;
     padding: 18px 21px 0 21px;
   }
-  .footer__autor-link {
+  .gray-block__autor-link {
     display: flex;
     align-items: center;
   }
-  .footer__photo {
+  .gray-block__photo {
     padding: 21px;
   }
-  .footer__image {
+  .gray-block__image {
     width: 80px;
     height: 84px;
   }
-  .footer__name {
+  .gray-block__name {
     font-size: 14px;
     line-height: 14px;
     padding-bottom: 10px;
   }
-  .footer__icon-facebook {
+  .gray-block__icon-facebook {
     width: 15px;
     height: 17px;
   }
 }
 
 @media (max-width: 370px) {
-  .footer__div {
+  .gray-block__div {
     width: 100%;
   }
-  .footer__photo {
+  .gray-block__photo {
     padding-top: 0;
     padding-left: 10px;
   }
 }
-.footer__second-block {
-  width: 100%;
-  height: 780px;
-  background: #9dc9c8;
-}
-.footer__second-title {
-  padding: 179px 0;
-}
 
 /* --------------------------------------- */
-.footer__second-block {
+.page__blue-block {
+  width: 100%;
   height: 780px;
+  overflow: hidden;
+  background: #9dc9c8;
 }
-.footer__second-title {
+.blue-block__container {
+  max-height: 780px;
+  margin-top: 179px;
+}
+.blue-block__second-title {
   font-size: 55px;
-  padding-bottom: 60px;
+  margin-bottom: 54px;
 }
-.footer__price-text {
+.blue-block__price-text {
   font-family: "Roboto";
   font-weight: 400;
   font-size: 25px;
   line-height: 25px;
 }
-.footer__price-bold {
+.blue-block__price-bold {
   font-family: "Roboto";
   font-weight: 400;
   font-size: 80px;
   line-height: 81px;
-  padding-bottom: 70px;
+  margin-bottom: 70px;
 }
-.footer__second-div {
+.blue-block__second-div {
   display: flex;
 }
-.footer__content {
+.blue-block__content {
   width: 320px;
 }
-.footer__content:not(:last-child) {
-  padding-right: 40px;
+.blue-block__content:not(:last-child) {
+  margin-right: 70px;
 }
-.footer__registration {
+.blue-block__registration {
   margin-bottom: 10px;
 }
-.footer__registration-text {
+.blue-block__registration-text {
   font-family: "Roboto";
   font-size: 18px;
   line-height: 18px;
 }
 
 @media (max-width: 1279px) {
-  .footer__second-block {
+  .page__blue-block {
     height: 452px;
   }
-  .footer__second-title {
-    padding-top: 80px;
+  .blue-block__container {
+    max-height: 452px;
+    margin-top: 104px;
+  }
+  .blue-block__second-title {
+    margin-bottom: 31px;
     font-size: 32px;
   }
-  .footer__price-text {
+  .blue-block__price-text {
     font-size: 14px;
     line-height: 14px;
   }
-  .footer__price-bold {
+  .blue-block__price-bold {
     font-size: 46px;
     line-height: 47px;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
   }
-  .footer__content {
+  .blue-block__content {
     width: 170px;
   }
-  .footer__content:not(:last-child) {
+  .blue-block__content:not(:last-child) {
     padding-right: 40px;
   }
-  .footer__registration {
+  .blue-block__registration {
     margin-bottom: 10px;
   }
-  .footer__registration-text {
+  .blue-block__registration-text {
     font-family: "Roboto";
     font-size: 10px;
     line-height: 10px;
@@ -1078,33 +1097,36 @@ body {
 }
 
 @media (max-width: 992px) {
-  .footer__second-block {
+  .page__blue-block {
     height: 364px;
   }
-  .footer__second-title {
-    padding-top: 62px;
-    font-size: 26px;
-    padding-bottom: 22px;
+  .blue-block__container {
+    max-height: 364px;
+    margin-top: 62px;
   }
-  .footer__price-text {
+  .blue-block__second-title {
+    font-size: 26px;
+    margin-bottom: 22px;
+  }
+  .blue-block__price-text {
     font-size: 12px;
     line-height: 12px;
   }
-  .footer__price-bold {
+  .blue-block__price-bold {
     font-size: 37px;
     line-height: 38px;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
   }
-  .footer__content {
+  .blue-block__content {
     width: 230px;
   }
-  .footer__content:not(:last-child) {
-    padding-right: 40px;
+  .blue-block__content:not(:last-child) {
+    margin-right: 31px;
   }
-  .footer__registration {
+  .blue-block__registration {
     margin-bottom: 10px;
   }
-  .footer__registration-text {
+  .blue-block__registration-text {
     font-size: 10px;
     line-height: 10px;
   }
@@ -1112,18 +1134,20 @@ body {
 
 /* ------------------------------------------- */
 
-.footer__three-block {
+.footer {
   width: 100%;
   background-color: black;
   height: 390px;
+  overflow: hidden;
 }
 .footer__container {
   position: relative;
+  max-height: 390px;
+  margin-top: 50px;
 }
 .footer_info {
   display: flex;
   justify-content: space-between;
-  margin-top: 50px;
 }
 .footer__image-about-site {
   margin-bottom: 18px;
@@ -1163,17 +1187,18 @@ body {
 .footer__synchronization {
   position: absolute;
   color: white;
-  top: 340px;
+  top: 280px;
   font-size: 18px;
   line-height: 18px;
   font-family: "Roboto";
 }
 
 @media (max-width: 1279px) {
-  .footer__three-block {
-    height: 326px;
+  .footer {
+    height: 226px;
   }
-  .footer_info {
+  .footer__container {
+    max-height: 226px;
     margin-top: 29px;
   }
   .footer__image-about-site {
@@ -1217,23 +1242,23 @@ body {
     line-height: 14px;
   }
   .footer__synchronization {
-    position: absolute;
-    color: white;
-    top: 290px;
+    top: 160px;
     font-size: 10px;
     line-height: 10px;
-    font-family: "Roboto";
   }
 }
 
 @media (max-width: 992px) {
-  .footer__three-block {
+  .footer {
     height: 251px;
+  }
+  .footer__container {
+    max-height: 251px;
+    margin-top: 23px;
   }
   .footer_info {
     display: flex;
     flex-direction: column;
-    margin-top: 23px;
   }
   .footer__sosial-media {
     margin-bottom: 47px;
@@ -1241,6 +1266,7 @@ body {
   .footer__image-about-site {
     width: 54px;
     height: 32px;
+    margin-top: 20px;
     margin-bottom: 14px;
   }
   .sosial__media:not(:last-child) {
@@ -1276,6 +1302,6 @@ body {
     line-height: 12px;
   }
   .footer__synchronization {
-    top: 220px;
+    top: 200px;
   }
 }
