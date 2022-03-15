@@ -82,15 +82,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  min-height: 220px;
 }
 .header__logo {
   margin-top: 20px;
   width: 112px;
   height: 66px;
 }
-.header__menu {
-  margin: 100px 0 0 0;
+.first-block__menu {
+  margin: 100px 0 30px 0;
 }
 .menu__list {
   display: flex;
@@ -127,8 +126,8 @@ body {
   }
 }
 @media (max-width: 992px) {
-  .header__menu {
-    margin: 70px 0 0 0;
+  .first-block__menu {
+    margin: 70px 0 30px 0;
   }
   .menu__item:not(:last-child) {
     margin-right: 30px;
@@ -879,6 +878,7 @@ body {
   line-height: 56px;
 }
 .gray-block__div {
+  padding: 45px;
   width: 791px;
   height: 451px;
   background-color: white;
@@ -890,7 +890,6 @@ body {
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
-  padding: 45px 45px 0 45px;
 }
 .gray-block__autor-link {
   display: flex;
@@ -898,6 +897,7 @@ body {
 }
 .gray-block__photo {
   padding: 26px;
+  padding-left: 0;
 }
 .gray-block__image {
   width: 190px;
@@ -925,6 +925,7 @@ body {
     line-height: 32px;
   }
   .gray-block__div {
+    padding: 25px;
     width: 458px;
     height: 261px;
     background-color: white;
@@ -933,7 +934,6 @@ body {
   .gray-block__text {
     font-size: 12px;
     line-height: 18px;
-    padding: 25px 25px 0 25px;
   }
   .gray-block__autor-link {
     display: flex;
@@ -941,6 +941,7 @@ body {
   }
   .gray-block__photo {
     padding: 15px;
+    padding-left: 0;
   }
   .gray-block__image {
     width: 110px;
@@ -971,6 +972,7 @@ body {
     line-height: 26px;
   }
   .gray-block__div {
+    padding: 21px;
     width: 308px;
     height: 248px;
     background-color: white;
@@ -979,7 +981,6 @@ body {
   .gray-block__text {
     font-size: 10px;
     line-height: 15px;
-    padding: 18px 21px 0 21px;
   }
   .gray-block__autor-link {
     display: flex;
@@ -987,6 +988,7 @@ body {
   }
   .gray-block__photo {
     padding: 21px;
+    padding-left: 0;
   }
   .gray-block__image {
     width: 80px;
@@ -1005,11 +1007,11 @@ body {
 
 @media (max-width: 370px) {
   .gray-block__div {
+    padding: 15px;
     width: 100%;
   }
   .gray-block__photo {
-    padding-top: 0;
-    padding-left: 10px;
+    padding-top: 10px;
   }
 }
 
